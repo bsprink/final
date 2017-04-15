@@ -1,0 +1,41 @@
+body{
+	background-color: black;
+
+}
+#container{
+	background-image: url("../images/spaceCopy.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 800px;
+	height: 800px;
+	margin-right: auto;
+	margin-left:auto;
+}
+#title{
+font-size: 50px;
+font-family: 'Stardos Stencil', cursive;
+color: white;
+text-align: center;
+
+}
+#appInfo{
+font-size: 30px;
+font-family: 'Stardos Stencil', cursive;
+font-family: 'Codystar', cursive;
+color: white;
+text-align: center;
+}
+#dateInput{
+	text-align: center;	
+}
+#dateInputArea{
+	text-align: center;
+}
+#button{
+display: inline-block;
+margin-left: 322px;	
+}
+#display{
+width: 800px;
+height: 800px;
+}
