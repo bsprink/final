@@ -9,6 +9,8 @@
 
 </head>
 <body>
+<div ng-app="spaceApp" ng-controller="spaceCtrl">
+
 	<div id="container">
 		<div id="title">EPIC IMAGES
 		</div>
@@ -18,14 +20,23 @@
 			<hr>
 				<div id="dateInput"><input id="dateInputArea" type="text" >
 				</div>
-					<button id=button>Enter a Date YYYY-MM-DD</button>
+					<button ng-click="func()" id=button>Enter a Date YYYY-MM-DD</button>
 					<hr>
-						<div id="display">
-						</div>
+						
 	</div>
+
+						<div class="display" ng-repeat="x in space">
+							<!-- <img src="{{x.image}}"/> -->
+								<img src="http://epic.gsfc.nasa.gov/epic-archive/jpg/{{x.image}}.jpg"/>
+						</div>
+
 <script src="scripts/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="scripts/main.js"></script>	
 </body>
 </html>
 
 
+https://api.nasa.gov/EPIC/api/natural/date/2015/12/31?api_key=7KQEYiAF5zeVxe4ozOXjBieqCtwMPrBpUAAKwUER
+https://epic.gsfc.nasa.gov/archive/natural/2015/12/31/jpg/epic_1b_20151231010436_01.jpg
+https://api.nasa.gov/EPIC/api/natural/date/2015-12-31?api_key=7KQEYiAF5zeVxe4ozOXjBieqCtwMPrBpUAAKwUER

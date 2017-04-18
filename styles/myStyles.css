@@ -38,4 +38,11 @@ margin-left: 322px;
 #display{
 width: 800px;
 height: 800px;
+
+text-align: center;
+}
+.display img {
+	width: 500px;
+	height: auto;
+	margin-left: 350px;	
 }
